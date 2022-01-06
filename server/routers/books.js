@@ -4,7 +4,8 @@ import { getBooks, addBook } from '../controllers/books';
 
 const router = express.Router();
 
-router.get('/', getBooks);
-router.post('/', addBook);
+router.get('/get', getBooks);
+
+router.post('/post', addBook);
 
 export default router;
